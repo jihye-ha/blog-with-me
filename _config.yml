@@ -45,7 +45,7 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # version: 1.0.0
 
 # Build settings
-theme: jekyll-theme-minimal
+remote-theme: jekyll-theme-minimal
 
 minima:
   social_links: 
