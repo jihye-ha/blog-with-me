@@ -1,0 +1,23 @@
+- category : bigdata
+  tags:
+    - Spark
+    - DataFrame
+    - HDFS
+    - SQL
+- category : statistics
+  tags:
+    - Hypothesis test
+    - Significance
+    - Correlation
+    - Feature selection
+- category: ai
+  tags:
+    - Machine Learning
+    - Deep Learning
+    - Reinforecement Learning
+- category: dev
+  tags:
+    - Envoronments
+    - Frameworks
+    - Tools
+    - Web

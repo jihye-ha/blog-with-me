@@ -1,0 +1,24 @@
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+{% for item in site.data.related %}
+{% if current_category == item.category %}
+  <div class="related">
+    <h3><b>Related Posts</b></h3>
+      <ul class="related-posts">
+        {% for post in site.posts %}
+          {% assign flag = 0 %}
+          {% for tag in item.tags %}
+            {% for post_tag in post.tags %}
+              {% if flag == 0 %}
+                {% if post_tag == tag %}
+                    {% include post-link.html %}
+                  {% assign flag = 1 %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+  </div>
+{% endif %}
+{% endfor %}

@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "How to create blog"
+date:   2020-10-11
+category: dev
+tag: Web
+---
+
+
+# **Let's create my blog on Github with Jekyll** 
+
+
+**Good tutorials (References)**
+- https://jekyllrb-ko.github.io/docs/
+- https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages
+- https://medium.com/20percentwork/creating-your-blog-for-free-using-jekyll-github-pages-dba37272730a
+---
+
+# **Installation**
+## **1. Install ruby**  
+   ```zsh
+   sudo apt-get install ruby-full
+   ```
+   _**what is Ruby?**_ a scripting language built from the ground up for use in front end and back end web development and similar applications. It is a robust, dynamically typed, and object-oriend language. Ruby and **Ruby on Rails** can help you build and secure a sebsite
+
+  - Reference
+    - https://www.ruby-lang.org/ko/documentation/installation/
+    - https://careerkarma.com/blog/what-is-ruby-used-for/
+
+## **2. Install gem**
+   ```zsh 
+   sudo apt-get install gem
+   ```
+   _**what is a gem?**_ a package manager for the Ruby programming language that provides standard format for distributing Ruby programs and libraries, a tool desined to easily manage the installation of gems, and a server for distributing them.  
+   - Reference
+     - https://en.wikipedia.org/wiki/RubyGems
+     - https://ideveloper2.tistory.com/80
+
+
+## **3. Install Jekyll**
+   ```zsh   
+   gem install jekyll bundler
+   ```
+
+
+# **Create & Build Site**  
+
+## **1. Create Site**
+
+```zsh
+jekyll new myblog
+```
+
+You can check your page on local server.
+
+```zsh
+cd myblog
+bundle exec jekyll serve
+```
+
+Then, access to `http://localhost:40000`
+
+
+## **2. Build Site**
+
+Jekyll is a generator of static web site so you need to build your site before hosting. While developing site, do `jekyll serve` to apply your fixes.
+
+```zsh
+cd myblog
+jekyll build
+jekyll serve
+```
+## **3. Host on your Github page**
+
+
+## **Contents**
+
+---
+# 
+## **Post**

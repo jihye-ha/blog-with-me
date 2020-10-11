@@ -1,0 +1,22 @@
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+{% for item in site.data.related %}
+  {% if current_category == item.category %}
+    {% for related_tag in item.tags %}
+      <h3 class='tag_title'><b> {{ related_tag }} </b></h3>        
+      <ul class="post-list">
+        {% for post in category[1] %}
+          {% if post.tag == related_tag %}
+            {% include post-link.html %}
+          {% else %}
+            {% for post_tag in post.tags %}
+              {% if post_tag == related_tag %}
+                {% include post-link.html %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  {% endif %}
+{% endfor %}

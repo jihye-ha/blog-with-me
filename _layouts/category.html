@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+<article class="post">
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <hr>
+
+<section>
+
+  {% assign current_category = page.category %}
+  {% for category in site.categories %}
+    {% if current_category == category.first %}
+      {% include related-tags.html %}
+    {% endif %}
+  {% endfor %}
+</section>
+
+</article>

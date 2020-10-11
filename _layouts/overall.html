@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+{% for category in site.categories %}
+  <hr>
+  <h1>
+  <a class="category-link" href="{{ category.first | relative_url }}">
+  <b>
+    {{ site.category_title[category.first] }}
+  </b>
+  </a>
+  </h1>
+  {% assign current_category = category.first %}
+  {% include related-tags.html %}
+{% endfor %}
+
+
+</article>
