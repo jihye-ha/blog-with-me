@@ -7,6 +7,7 @@ layout: page
     {{ content }}
   </div>
 
+<section>
 {% for category in site.categories %}
   <hr>
   <h1>
@@ -19,6 +20,6 @@ layout: page
   {% assign current_category = category.first %}
   {% include related-tags.html %}
 {% endfor %}
-
+</section>
 
 </article>
