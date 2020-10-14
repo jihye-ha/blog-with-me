@@ -1,6 +1,5 @@
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-<li>
     <h4>
       <a class="post-link" href="{{ post.url | relative_url }}">
         {{ post.title | escape }}
@@ -10,4 +9,3 @@
     {%- if site.show_excerpts -%}
       {{ post.excerpt }}
     {%- endif -%}
-</li>

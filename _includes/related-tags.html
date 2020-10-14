@@ -3,6 +3,7 @@
 {% for item in site.data.related %}
   {% if current_category == item.category %}
     {% for related_tag in item.tags %}
+    <div class="related">
       <h3 class='tag_title'><b> {{ related_tag }} </b></h3>        
       <ul class="post-list">
         {% for post in category[1] %}
@@ -17,6 +18,7 @@
           {% endif %}
         {% endfor %}
       </ul>
+    </div>
     {% endfor %}
   {% endif %}
 {% endfor %}
