@@ -5,6 +5,7 @@
   <div class="related">
     <h3><b>Related Posts</b></h3>
       <ul class="related-posts">
+        <h4>
         {% for post in site.posts %}
           {% assign flag = 0 %}
           {% for tag in item.tags %}
@@ -18,6 +19,7 @@
             {% endfor %}
           {% endfor %}
         {% endfor %}
+      </h4>
       </ul>
   </div>
 {% endif %}
