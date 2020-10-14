@@ -8,10 +8,17 @@
       {%- if site.author %}
         <ul class="contact-list">
           {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
+            <li class="p-name"> 
+              <div id="name" style="display:inline;">
+                <img src="{{ site.baseurl }}/assets/images/favicon.png" align="left" />
+                &nbsp;
+                {{ site.author.name | escape }} 
+              </div>
+              </li>
           {% endif -%}
           {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+            <li>&nbsp;
+              <a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
           {%- endif %}
         </ul>
       {%- endif %}
