@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rules of Machine Learning: Best Practices for ML Engineering"
+title:  "Rules of ML: Best Practices for ML Engineering"
 date:   2020-10-18
 category: ai
 tag: Deep Learning
