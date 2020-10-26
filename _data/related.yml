@@ -10,11 +10,14 @@
     - Significance
     - Correlation
     - Feature selection
+    - Bayesian
 - category: ai
   tags:
     - Machine Learning
     - Deep Learning
     - Reinforecement Learning
+    - Uncertainty
+    - Dropout
 - category: dev
   tags:
     - Envoronments
